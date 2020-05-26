@@ -2,6 +2,12 @@ html {
   box-sizing: border-box;
   width: 100vw;
   overflow-x: hidden;
+  outline: solid 2px wheat;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 *,
@@ -9,7 +15,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+h2 {
+  text-align: center;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -19,9 +27,27 @@ body {
   color: #fff;
 }
 
+.container {
+  width: 600 px;
+  margin: 0 auto;
+  padding: 20px;
+  /* display: flex; */
+  /* justify-content: center; */
+  
+}
 
-.toolbar {
+
+.bordersList {
   display: flex;
-  justify-content: flex-end;
-  padding: 16px 24px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5px;
+  text-align: center;
+}
+.countryInfo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.countryInfo li {
+  margin: 8px;
 }

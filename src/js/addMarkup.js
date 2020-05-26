@@ -3,8 +3,8 @@ import dataListTemplate from './templates/dataListTemplate.hbs';
 import { refs } from './refs';
 
 export const addMarkup = data =>{
-  refs.countries.innerHTML = ''
-  refs.countries.insertAdjacentHTML('beforebegin', dataListTemplate(data));}
+  // refs.countries.innerHTML = ''  
+  refs.countries.insertAdjacentHTML('beforeend', dataListTemplate(data))}
 
 export const renderCountryList = data => {
   const countryList = `
